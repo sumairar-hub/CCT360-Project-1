@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #faf7f2;
+    color: #252525;
+    line-height:1.6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 6%;
+    border-bottom: 1px solid #d6d0c9;
+
+}
+
+.logo{
+    font-size: 30px;
+    letter-spacing:2px;
+}
+
+nav{ 
+    display:flex;
+    gap:30px;
+}
+
+nav a:hover{
+    color: #9d5448;
+}
+
+main {
+    max-width:1440px;
+    margin: 0 auto;
+    padding: 40px 6%;
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.hero-main{
+    background-color: #e2d6c7;
+    padding: 60px 40px;
+    min-height: 400px;
+}
+
+.hero-main h2{
+   font-size: 52px;
+   line-height: 1.2;
+   margin:25px 0;
+}
+
+.hero-side {
+    background-color: #eee8e0;
+    padding: 40px 30px;
+}
+
+.hero-side h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #9d5448;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #783f36;
+}
+
+.latest-stories h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.cards-gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap:25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e0d9d2;
+}
+
+.card-image {
+    background-color: #e2d6c7;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card .button {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Detail Page - CSS Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.detail-hero {
+    margin-bottom: 30px;
+}
+
+.detail-hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.article-content h3 {
+    margin: 25px 0 15px;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+}
+
+.article-image {
+    background-color: #e2d6c7;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.article-sidebar {
+    background-color: #eee8e0;
+    padding: 30px;
+}
+
+.article-sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.article-sidebar p {
+    margin-bottom: 15px;
+}
+
+/* Footer - Flexbox */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 6%;
+    border-top: 1px solid #d6d0c9;
+    margin-top: 50px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a:hover {
+    color: #9d5448;
+}
+
+/* Mobile Responsive Layout */
+@media (max-width: 767px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 25px 5%;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-main {
+        padding: 35px 25px;
+        min-height: auto;
+    }
+
+    .hero-main h2 {
+        font-size: 36px;
+    }
+
+    .cards-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-hero h2 {
+        font-size: 34px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
