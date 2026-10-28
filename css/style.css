@@ -141,7 +141,7 @@ main {
     margin-bottom: 30px;
 }
 
-.detail-hero h2 {
+.detail-hero h1 {
     font-size: 48px;
     margin-bottom: 15px;
 }
@@ -222,7 +222,7 @@ footer {
         min-height: auto;
     }
 
-    .hero-main h2 {
+    .hero-main h1 {
         font-size: 36px;
     }
 
@@ -234,7 +234,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .detail-hero h2 {
+    .detail-hero h1 {
         font-size: 34px;
     }
 
